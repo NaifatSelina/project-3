@@ -16,14 +16,19 @@ def get_sold_data():
     """
     Get amount of sold books figures input from the user.
     """
-    print("Please enter the amount of each book sold yesterday.")
-    print("Data should be six numbers, separated by commas.")
-    print("Example: 10,20,30,40,50,60\n")
+    while True:
+        print("Please enter the amount of each book sold yesterday.")
+        print("Data should be six numbers, separated by commas.")
+        print("Example: 10,20,30,40,50,60\n")
 
-    data_str = input("Enter your data here: ")
-    sold_data = data_str.split(",")
-    valid_data(sold_data)
+        data_str = input("Enter your data here: ")
+        sold_data = data_str.split(",")
+        if valid_data(sold_data):
+            print("Thankyou from Thunderbird and Whale! This information is valid.")
+            break
 
+        return sold_data
+    
 def valid_data(values):
     """
     Inside try will convert all string values into integers.
@@ -38,6 +43,9 @@ def valid_data(values):
             )
     except ValueError as e:
         print(f"Invalid data: {e}, input valid data.\n")
+        return False
+
+    return True
 
 
-get_sold_data()
+data = get_sold_data()
