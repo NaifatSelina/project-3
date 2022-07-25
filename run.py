@@ -27,7 +27,6 @@ def get_sold_data():
         if valid_data(sold_data):
             print("Thankyou from T&W! This information is valid.")
 
-
             break
 
     return sold_data
@@ -61,7 +60,18 @@ def update_sold_worksheet(data):
     sold_worksheet.append_row(data)
     print("Sold worksheet updated successfully.\n")
 
-
+def main():
+    """
+    Calls all the functions in the program to run them
+    """
 data = get_sold_data()
 sold_data = [int(num) for num in data]
 update_sold_worksheet(sold_data)
+
+print("Welcome to Thunderbird and Whale! \n")
+print("We're a cozy bookstore in Forks however we get alot of customers!' \n")
+print("It can be hard to keep up with orders... \n")
+print("Which is why we need your help! \n")
+print("We need to know how many orders of books we need everyday! \n")
+print("So lets get started! \n")
+main()
