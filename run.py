@@ -62,14 +62,15 @@ def update_sold_worksheet(data):
 
 def main():
     """
-    Calls all the functions in the program to run them
+    Call function created
     """
-data = get_sold_data()
-sold_data = [int(num) for num in data]
-update_sold_worksheet(sold_data)
+    data = get_sold_data()
+    sold_data = [int(num) for num in data]
+    update_sold_worksheet(sold_data)
+
 
 print("Welcome to Thunderbird and Whale! \n")
-print("We're a cozy bookstore in Forks however we get alot of customers!' \n")
+print("We're a cozy bookstore in Forks however we get alot of customers! \n")
 print("It can be hard to keep up with orders... \n")
 print("Which is why we need your help! \n")
 print("We need to know how many orders of books we need everyday! \n")
