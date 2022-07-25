@@ -23,12 +23,16 @@ def get_sold_data():
 
         data_str = input("Enter your data here: ")
         sold_data = data_str.split(",")
+
         if valid_data(sold_data):
-            print("Thankyou from Thunderbird and Whale! This information is valid.")
+            print("Thankyou from T&W! This information is valid.")
+
+
             break
 
-        return sold_data
-    
+    return sold_data
+
+
 def valid_data(values):
     """
     Inside try will convert all string values into integers.
@@ -48,4 +52,16 @@ def valid_data(values):
     return True
 
 
+def update_sold_worksheet(data):
+    """
+    Update sold worksheet
+    """
+    print("Updating sold books worksheet...\n")
+    sold_worksheet = SHEET.worksheet("sold")
+    sold_worksheet.append_row(data)
+    print("Sold worksheet updated successfully.\n")
+
+
 data = get_sold_data()
+sold_data = [int(num) for num in data]
+update_sold_worksheet(sold_data)
