@@ -35,7 +35,6 @@ The live site is available for viewing here - <a href="https://***" target="_bla
 * [**Credits**](<#credits>)
     * [**Content**](<#content>)
     * [**Media**](<#media>)
-    * [**Code**](<#code>)
 
 # Objective
 

@@ -145,7 +145,7 @@ def get_ordered_values(data):
     print("We can now order this amount of each book next week:\n")
 
     return {heading: data for heading, data in zip(headings, data)}
-  
+
 
 ordered_values = get_ordered_values(ordered_data)
 print(ordered_values)
