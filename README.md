@@ -162,5 +162,30 @@ For this site, Google Sheets was used to store the data, update the data and com
 
 ![A11y](assets/images/readme-images/a11y.png)
 
+## Manual Testing
 
+### Structure
+* Ensure terminal is centered.
+* Ensure Run System button is centered and large enough to see.
+* Ensure colours contrast well.
+* Ensure text is clear to see.
 
+### Welcome Text
+* Ensure user is greeted with the welcome message in the correct order.
+* Ensure the prompt for user to input data is present and under welcome text.
+* Ensure sold data is transferred to spreadsheet when inputted.
+
+### Errors
+* Ensure that the correct error message is presented when an incorrect amount of values are inputted.
+* Ensure the correct error message is presented if user doesn't input a number value.
+* Ensure the terminal will identify invalid data and not continue to push that data.
+* Ensure Google Sheet is updated when valid data is inputted.
+
+### Updates
+* Ensure message is presented to inform user that the data they have inputted is valid when it is.
+* Ensure the user is informed when each spreadsheet is updating and has finished updating.
+* Ensure the Google Sheet reflects this and actually updates with the correct data.
+
+### Results
+* Ensure results are printed to user.
+* Ensure the correct results are printed to the user.
