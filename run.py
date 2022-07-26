@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -60,6 +61,19 @@ def update_sold_worksheet(data):
     sold_worksheet.append_row(data)
     print("Sold worksheet updated successfully.\n")
 
+def calculate_difference_data(sold_row):
+    """
+    Function to calculate the difference,
+    between the amount of books sold,
+    and the amount of books ordered
+
+    """
+    print("Gathering difference of sales and orders... \n")
+    ordered = SHEET.worksheet("ordered").get_all_values()
+    ordered_row = ordered[-1]
+    print(ordered_row)
+
+
 def main():
     """
     Call function created
@@ -67,6 +81,7 @@ def main():
     data = get_sold_data()
     sold_data = [int(num) for num in data]
     update_sold_worksheet(sold_data)
+    calculate_difference_data(sold_data)
 
 
 print("Welcome to Thunderbird and Whale! \n")
