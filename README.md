@@ -2,7 +2,7 @@
 
 The Thunderbird and Whale bookstore system is based on the notorious bookstore that Bella Swan is seen to visit in Twilight. It's situated in the town of Forks which has a very simplistic and calm nature surrounding the town- similarly, the app system I created also does not have an overload of information, The app is simply useful as it allows the owners of the bookstore to effectively and quickly recieve data on how many books the need to order into the shop at the beginning of the new week by calculating how many books were sold, ordered and the difference between these figures.
 
-The live site is available for viewing here - <a href="https://***" target="_blank" rel="noopener">Thunder and Whale Bookstore System.</a>
+The live site is available for viewing here - <a href="https://thunderbird-and-whale.herokuapp.com/" target="_blank" rel="noopener">Thunder and Whale Bookstore System.</a>
 
 ![Thunderbird and Whale responsive design](assets/images/readme-images/responsiveness.png)
 
@@ -199,11 +199,12 @@ I did this through the following steps:
 2. Click on the button that states 'Create New App.'
 3. You can then input your application name and select your region- press 'Create App' once that is completed.
 4. Once this has been done, you'll be at the 'Deploy' tab, from here click on settings and then 'Reveal Config Vars' in the 'Config Vars' section. 
-5. Locate the KEY input field and enter "PORT" and in the VALUE input field enter "8000"- click 'Add' on the right.
+5. Locate the KEY input field and enter "CREDS" and in the VALUE input field enter "JSON", repeat this but in the KEY input field enter "PORT" and in the VALUE input field enter "8000"- click 'Add' on the right.
 6. Scroll to buildpacks section and click on 'Add buildpack'.
 7. Firstly, add 'Python' then add 'node.js', in that specific order.
-8. Search for your respository and click 'Connect'.
-9. Select your preferred deployment type and select 'Deploy Branch'.
+8. Go to 'Deploy' tab and  select 'GitHub'- then search for your GitHub repository- click 'Connect'.
+9. Select your preferred deployment type and select 'Enable Automatic Deploys' and 'Deploy'.
+10. Select view to viewed deployed app.
 
 You can find the live link the the GitHub repository here- https://github.com/NaifatSelina/third-project 
 
