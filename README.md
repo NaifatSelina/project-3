@@ -13,9 +13,8 @@ The live site is available for viewing here - <a href="https://***" target="_bla
     * [Design Prototype](<#design-prototype>)
     * [System Structure](<#system-structure>)
     * [Python Logic](<#python-logic>)
-    * [Data Model](<#data-model>)
+    * [Data](<#data>)
     * [Design Choices](<#design-choices>)
-    * [Typography](<#typography>)
     * [Colour Scheme](<#colour-scheme>)
 * [**Features**](<#features>)
     * [Startup](<#startup>)
@@ -61,3 +60,11 @@ The very simple Thunderbird and Whale Bookstore system simply contains a command
 I used the paint app on Windows to create a simple flowchart to showcase my python logic and how the system will process the data input and reach the final result message.
 
 ![Python Flow Chart](assets/images/readme-images/project%203%20flow.png)
+
+## Data
+
+For this site, Google Sheets was used to store the data, update the data and compare the data. The [Google Sheet](https://docs.google.com/spreadsheets/d/1jorvEpWdPbdxXYKE7Tm0hVA3ahgTq5oP5v7CksHYmNc/edit#gid=1680754323) has three different worksheets, with one containing the data for the amound of books sold, another with the amount of books ordered and lastly a worksheet storing the difference between the two former worksheets so the bookstore can see if there was a surplus of data or not.
+
+![Google Sheets](assets/images/readme-images/sold.png)
+![Google Sheets](assets/images/readme-images/ordered.png)
+![Google Sheets](assets/images/readme-images/difference.png)
