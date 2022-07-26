@@ -129,12 +129,38 @@ For this site, Google Sheets was used to store the data, update the data and com
 * [GitHub](https://github.com/) - Used to host and deploy the website.
 * [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug.
 * [Am I Responsive?](https://ui.dev/amiresponsive) - USed to test responsiveness of website.
+* [Pep8](http://pep8online.com/) - Used to test python code in website.
 * [Figma](https://www.figma.com/files/recent?fuid=1098191112256560055) - USed to create design prototype.
 * [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
 
 ## Python Packages
 
 * [GSpread](https://pypi.org/project/gspread/) - Used to transfer data between google sheets.
+
+[Back to Contents](<#contents>)
+
+# Testing
+
+## CSS Validation
+- I used W3C CSS Validator to ensure the html in my application was bug-free.
+
+![W3C HTML](assets/images/readme-images/w3c%20CSS.png)
+
+## PEP8 Validation
+- I used [pep8.com](http://pep8online.com/) to ensure there were no errors in my python code. I ran into a bug which stated there was white space in my document, after deleting that whitespace my code passed through the validator with no issues as seen below.
+
+![PEP8](assets/images/readme-images/pep8%20bug.png)
+![PEP8](assets/images/readme-images/PEP8%20all%20good.png)
+
+## Lighthouse Testing
+- To ensure the site would be compatible with desktops I ran lighthouse testing using Chrome Developer Tools.
+
+![Chrome Dev Tools](assets/images/readme-images/lighthouse.png)
+
+## A11y
+- To ensure that my website contrasted well enough with the chose colours I testing it using a11y which found that it contrasted perfectly.
+
+![A11y](assets/images/readme-images/a11y.png)
 
 
 
