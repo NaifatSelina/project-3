@@ -58,4 +58,6 @@ The very simple Thunderbird and Whale Bookstore system simply contains a command
 
 ## Python Logic
 
+I used the paint app on Windows to create a simple flowchart to showcase my python logic and how the system will process the data input and reach the final result message.
 
+![Python Flow Chart](assets/images/readme-images/project%203%20flow.png)
