@@ -5,3 +5,35 @@ The Thunderbird and Whale bookstore system is based on the notorious bookstore t
 The live site is available for viewing here - <a href="https://***" target="_blank" rel="noopener">Thunder and Whale Bookstore System.</a>
 
 ![Thunderbird and Whale responsive design](assets/images/)
+
+# Contents
+
+* [**Objective**](<#objective>)
+* [**User Experience UX**](<#user-experience-ux>)
+    * [Design Prototype](<#design-prototype>)
+    * [Site Structure](<#site-structure>)
+    * [Python Logic](<#python-logic>)
+    * [Data Model](<#data-model>)
+    * [Design Choices](<#design-choices>)
+    * [Typography](<#typography>)
+    * [Colour Scheme](<#colour-scheme>)
+* [**Features**](<#features>)
+    * [Startup](<#startup>)
+    * [Welcome Text](<#welcome-text>)
+    * [Input Instructions](<#input-instructions>)
+    * [Feedback](<#feedback>)
+    * [Sold Sheet Update](<#sold-sheet-update>)
+    * [Difference Sheet Update](<#difference-sheet-update>)
+    * [Ordered Sheet Update](<#ordered-sheet-update>)
+    * [Results](<#results>)
+* [**Future Features**](<#future-features>)
+    * [Last Restock Comparisons](<#last-restock-comparisons>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Python Packages**](<#python-packages>)
+* [**Testing**](<#testing>)
+* [**Deployment To Heroku**](<#deployment-to-heroku>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Media**](<#media>)
+    * [**Code**](<#code>)
+    
