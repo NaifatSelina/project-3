@@ -52,25 +52,16 @@ def valid_data(values):
     return True
 
 
-def update_sold_worksheet(data):
+def update_worksheet(data, worksheet):
     """
-    Update sold worksheet
+    Updats the relevant worksheet with the user input data
     """
-    print("Updating sold books worksheet...\n")
-    sold_worksheet = SHEET.worksheet("sold")
-    sold_worksheet.append_row(data)
-    print("Sold worksheet has been updated successfully.\n")
-
-def update_difference_worksheet(data):
-    """
-    Update the difference worksheet
-    """
-    print("Updating difference books worksheet...\n")
-    difference_worksheet = SHEET.worksheet("difference")
-    difference_worksheet.append_row(data)
-    print("Difference worksheet updated successfully.\n")
-    print("We now know if we have over ordered.\n")
-    print("Or if its a Forks fav and we need to order more!\n")
+    print(f"Hold on! just updating {worksheet} worksheet...\n")
+    worksheet_to_update = SHEET.worksheet(worksheet)
+    worksheet_to_update.append_row(data)
+    print(f"{worksheet} worksheet updated successfully\n")
+    print("We can now use this to calculate next weeks orders... \n")
+    print("you're a great help! \n")
 
 def calculate_difference_data(sold_row):
     """
@@ -97,10 +88,10 @@ def main():
     """
     data = get_sold_data()
     sold_data = [int(num) for num in data]
-    update_sold_worksheet(sold_data)
+    update_worksheet(sold_data, "sold")
     new_difference_data = calculate_difference_data(sold_data)
     print(new_difference_data)
-    update_difference_worksheet(new_difference_data)
+    update_worksheet(new_difference_data, "difference")
 
 
 print("Welcome to Thunderbird and Whale! \n")
