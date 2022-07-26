@@ -39,5 +39,6 @@ The live site is available for viewing here - <a href="https://***" target="_bla
 
 # Objective
 
+For my third project I wanted to create something simple, useful and something that still related to one of my passions. As a huge Twilight fan and bookworm that would love to own a book shop this simple but effective system is perfect. I believe this system of calculating future orders needed is also something that can be used by all business, just differin g in scale, therefore it is simple but highly effective.
 
-    
+[Back to Contents](<#contents>) 
