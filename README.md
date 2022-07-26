@@ -68,3 +68,9 @@ For this site, Google Sheets was used to store the data, update the data and com
 ![Google Sheets](assets/images/readme-images/sold.png)
 ![Google Sheets](assets/images/readme-images/ordered.png)
 ![Google Sheets](assets/images/readme-images/difference.png)
+
+* ### Colour Scheme
+Aligning with the gloomy and very cozy nature of the Twilight Saga movies, and the Thunderbird and Whale bookstore in the movie I kept the colours very cozy, and dark, reflecting the colours of nature as Twilight contains a large amount of nature imagery.
+Therefore, I decided to go for a dark brown for the background colour and I used a forest green for the 'Run System' button. The interface being black complients these colour well, with the white of the text allowing for efficient contrast for accessibility purposes.
+
+[Back to Contents](<#contents>)
