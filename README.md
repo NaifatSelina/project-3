@@ -111,3 +111,16 @@ For this site, Google Sheets was used to store the data, update the data and com
 * Finally, the final outcome of how many of each book is needed to be ordered by the bookstore owner is printed, each book followed by the amount that needs to be ordered, or if there actually are books that need to be ordered less. The bookstore owner has done this in a fast, simple and reliable system.
 
 ![Results](assets/images/readme-images/results.png)
+
+[Back to Contents](<#contents>)
+
+## Future Features
+
+### Last Restock Comparisons
+
+* In future versions I would allow for the user to see a comparison between the stock needed for this week and last week so the owner can know which books are rising in popularity, falling in popularity, what people are preferring to buy and how they can change their ordered to reflect this data and cause a greater profit.
+
+
+
+
+
