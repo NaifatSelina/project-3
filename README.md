@@ -132,6 +132,9 @@ For this site, Google Sheets was used to store the data, update the data and com
 * [Figma](https://www.figma.com/files/recent?fuid=1098191112256560055) - USed to create design prototype.
 * [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
 
+## Python Packages
+
+* [GSpread](https://pypi.org/project/gspread/) - Used to transfer data between google sheets.
 
 
 
