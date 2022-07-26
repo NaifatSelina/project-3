@@ -120,6 +120,17 @@ For this site, Google Sheets was used to store the data, update the data and com
 
 * In future versions I would allow for the user to see a comparison between the stock needed for this week and last week so the owner can know which books are rising in popularity, falling in popularity, what people are preferring to buy and how they can change their ordered to reflect this data and cause a greater profit.
 
+## Technologies Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - Provides the functionality of the website.
+* [a11y](https://color.a11y.com/Contrast/) - Used to test the contrast and accessibility.
+* [GitHub](https://github.com/) - Used to host and deploy the website.
+* [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug.
+* [Am I Responsive?](https://ui.dev/amiresponsive) - USed to test responsiveness of website.
+* [Figma](https://www.figma.com/files/recent?fuid=1098191112256560055) - USed to create design prototype.
+* [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
 
 
 
