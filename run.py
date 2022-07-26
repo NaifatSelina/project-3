@@ -123,7 +123,7 @@ def main():
     update_worksheet(new_difference_data, "difference")
     sold_columns = get_last_5_entries_sold() 
     ordered_data = calculate_ordered_data(sold_columns)
-    print(ordered_data)
+    update_worksheet(ordered_data, "ordered")
 
 print("Welcome to Thunderbird and Whale! \n")
 print("We're a cozy bookstore in Forks however we get alot of customers! \n")
