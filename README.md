@@ -21,9 +21,7 @@ The live site is available for viewing here - <a href="https://***" target="_bla
     * [Welcome Text](<#welcome-text>)
     * [Input Instructions](<#input-instructions>)
     * [Feedback](<#feedback>)
-    * [Sold Sheet Update](<#sold-sheet-update>)
-    * [Difference Sheet Update](<#difference-sheet-update>)
-    * [Ordered Sheet Update](<#ordered-sheet-update>)
+    * [Updates](<#updates>)
     * [Results](<#results>)
 * [**Future Features**](<#future-features>)
     * [Last Restock Comparisons](<#last-restock-comparisons>)
@@ -75,3 +73,41 @@ For this site, Google Sheets was used to store the data, update the data and com
 
 [Back to Contents](<#contents>)
 
+# Features
+
+## Start Up
+
+* When the site is first loaded the user will see is the interface with the Run System button above it. There will be a message letting the user know that the start up command is running.
+
+![Start Up Image](assets/images/readme-images/start%20up.png)
+
+## Welcome Text
+
+* The site also provides the user with a fun and lively welcome text which briefly informs the user of what the system is about and what the interface will need help with.
+
+![Welcome Text](assets/images/readme-images/start%20up.png)
+
+## Input Instructions
+
+* On the screen is also instructions prompting the user to input the amount of each book that was sold the previous day, at the bottom the user can input their data.
+
+![Input Instructions](assets/images/readme-images/start%20up.png)
+
+## Feedback
+
+* If the user enters invalid data, by not entering the correct amount of numbers or by not entering a number at all and accidently entering a word for example, the system will present the user with a message letting them know of this so they know what they did wrong and can try again with the correct data.
+
+![Feedback](assets/images/readme-images/invalid%20values%20msg.png)
+![Feedback](assets/images/readme-images/word%20not%20number.png)
+
+## Updates
+
+* If the data is valid, the user will be met with a message clarifying this. The interface will then update each worksheet consecutively and print a message to the user as each updates so that the user knows what is happening, that it has happened and that their worksheets have successfully been updated.
+
+![Update](assets/images/readme-images/valid%20data.png)
+
+## Results 
+
+* Finally, the final outcome of how many of each book is needed to be ordered by the bookstore owner is printed, each book followed by the amount that needs to be ordered, or if there actually are books that need to be ordered less. The bookstore owner has done this in a fast, simple and reliable system.
+
+![Results](assets/images/readme-images/results.png)
