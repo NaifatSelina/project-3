@@ -196,15 +196,45 @@ The Thunderbird and Whale project was deployed to [Heroku](https://www.heroku.co
 I did this through the following steps:
 
 1. Create an account with Heroku or Log In.
+
+![Step 1](assets/images/readme-images/step%201.png)
+
 2. Click on the button that states 'Create New App.'
+
+![Step 2](assets/images/readme-images/step%202.png)
+
 3. You can then input your application name and select your region- press 'Create App' once that is completed.
+
+![Step 3](assets/images/readme-images/step%203.png)
+
 4. Once this has been done, you'll be at the 'Deploy' tab, from here click on settings and then 'Reveal Config Vars' in the 'Config Vars' section. 
+
+![Step 4](assets/images/readme-images/step%204.png)
+
 5. Locate the KEY input field and enter "CREDS" and in the VALUE input field enter "JSON", repeat this but in the KEY input field enter "PORT" and in the VALUE input field enter "8000"- click 'Add' on the right.
+
+![Step 5](assets/images/readme-images/step%205.png)
+
 6. Scroll to buildpacks section and click on 'Add buildpack'.
+
+![Step 6](assets/images/readme-images/step%206.png)
+
 7. Firstly, add 'Python' then add 'node.js', in that specific order.
+
+![Step 7](assets/images/readme-images/step%207.png)
+
 8. Go to 'Deploy' tab and  select 'GitHub'- then search for your GitHub repository- click 'Connect'.
+
+![Step 8](assets/images/readme-images/step%208.png)
+
 9. Select your preferred deployment type and select 'Enable Automatic Deploys' and 'Deploy'.
+
+![Step 9](assets/images/readme-images/step%209.png)
+![Step 10](assets/images/readme-images/step%2010.png)
+
 10. Select view to viewed deployed app.
+
+![Step 11](assets/images/readme-images/step%2011.png)
 
 You can find the live link the the GitHub repository here- https://github.com/NaifatSelina/third-project 
 
