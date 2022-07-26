@@ -63,12 +63,14 @@ def update_sold_worksheet(data):
 
 def update_difference_worksheet(data):
     """
-    Update difference worksheet
+    Update the difference worksheet
     """
     print("Updating difference books worksheet...\n")
     difference_worksheet = SHEET.worksheet("difference")
     difference_worksheet.append_row(data)
     print("Difference worksheet updated successfully.\n")
+    print("We now know if we have over ordered.\n")
+    print("Or if its a Forks fav and we need to order more!\n")
 
 def calculate_difference_data(sold_row):
     """
