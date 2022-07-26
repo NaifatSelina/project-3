@@ -133,6 +133,7 @@ For this site, Google Sheets was used to store the data, update the data and com
 ## Python Packages
 
 * [GSpread](https://pypi.org/project/gspread/) - Used to transfer data between google sheets.
+* [Google-auth](https://pypi.org/project/google-auth/).
 
 [Back to Contents](<#contents>)
 
