@@ -59,7 +59,7 @@ def update_sold_worksheet(data):
     print("Updating sold books worksheet...\n")
     sold_worksheet = SHEET.worksheet("sold")
     sold_worksheet.append_row(data)
-    print("Sold worksheet updated successfully.\n")
+    print("Sold worksheet has been updated successfully.\n")
 
 def update_difference_worksheet(data):
     """
