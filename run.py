@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -12,6 +11,7 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('thunderbird_and_whale')
+
 
 def get_sold_data():
     """
@@ -63,6 +63,7 @@ def update_worksheet(data, worksheet):
     print("We can now use this to calculate next weeks orders... \n")
     print("you're a great help! \n")
 
+
 def calculate_difference_data(sold_row):
     """
     Function to calculate the difference,
@@ -73,13 +74,12 @@ def calculate_difference_data(sold_row):
     print("Gathering the difference of sales and orders... \n")
     ordered = SHEET.worksheet("ordered").get_all_values()
     ordered_row = ordered[-1]
-    
     difference_data = []
     for ordered, sold in zip(ordered_row, sold_row):
         difference = int(ordered) - sold
         difference_data.append(difference)
-    
     return difference_data
+
 
 def get_last_5_entries_sold():
     """
@@ -93,11 +93,11 @@ def get_last_5_entries_sold():
     for ind in range(1, 7):
         column = sold.col_values(ind)
         columns.append(column[-5:])
-    
     return columns
 
+
 def calculate_ordered_data(data):
-    """ 
+    """
     Calculate average amount ordered of each book,
     adding 10% to round as half a book cannot be ordered
     """
@@ -112,6 +112,7 @@ def calculate_ordered_data(data):
 
     return new_ordered_data
 
+
 def main():
     """
     Call functions created
@@ -121,9 +122,11 @@ def main():
     update_worksheet(sold_data, "sold")
     new_difference_data = calculate_difference_data(sold_data)
     update_worksheet(new_difference_data, "difference")
-    sold_columns = get_last_5_entries_sold() 
+    sold_columns = get_last_5_entries_sold()
     ordered_data = calculate_ordered_data(sold_columns)
     update_worksheet(ordered_data, "ordered")
+    return ordered_data
+
 
 print("Welcome to Thunderbird and Whale! \n")
 print("We're a cozy bookstore in Forks however we get alot of customers! \n")
@@ -131,7 +134,18 @@ print("It can be hard to keep up with orders... \n")
 print("Which is why we need your help! \n")
 print("We need to know how many orders of books we need everyday! \n")
 print("So lets get started! \n")
-main()
+ordered_data = main()
 
 
+def get_ordered_values(data):
+    """
+    Print ordered numbers for each T&W book.
+    """
+    headings = SHEET.worksheet("ordered").get_all_values()[0]
+    print("We can now order this amount of each book next week:\n")
 
+    return {heading: data for heading, data in zip(headings, data)}
+  
+
+ordered_values = get_ordered_values(ordered_data)
+print(ordered_values)
