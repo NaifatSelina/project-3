@@ -61,6 +61,15 @@ def update_sold_worksheet(data):
     sold_worksheet.append_row(data)
     print("Sold worksheet updated successfully.\n")
 
+def update_difference_worksheet(data):
+    """
+    Update difference worksheet
+    """
+    print("Updating difference books worksheet...\n")
+    difference_worksheet = SHEET.worksheet("difference")
+    difference_worksheet.append_row(data)
+    print("Difference worksheet updated successfully.\n")
+
 def calculate_difference_data(sold_row):
     """
     Function to calculate the difference,
@@ -71,7 +80,13 @@ def calculate_difference_data(sold_row):
     print("Gathering difference of sales and orders... \n")
     ordered = SHEET.worksheet("ordered").get_all_values()
     ordered_row = ordered[-1]
-    print(ordered_row)
+    
+    difference_data = []
+    for ordered, sold in zip(ordered_row, sold_row):
+        difference = int(ordered) - sold
+        difference_data.append(difference)
+    
+    return difference_data
 
 
 def main():
@@ -81,7 +96,9 @@ def main():
     data = get_sold_data()
     sold_data = [int(num) for num in data]
     update_sold_worksheet(sold_data)
-    calculate_difference_data(sold_data)
+    new_difference_data = calculate_difference_data(sold_data)
+    print(new_difference_data)
+    update_difference_worksheet(new_difference_data)
 
 
 print("Welcome to Thunderbird and Whale! \n")
