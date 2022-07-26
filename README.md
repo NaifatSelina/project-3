@@ -45,3 +45,7 @@ For my third project I wanted to create something simple, useful and something t
 # User Experience (UX)
 
 ## Design Prototype
+
+I used Figma to design a very basic wireframe as I knew this command line application would be simple in its appearance. The system still ended up being slightly different with a dark brown background being used as opposed to a dark green and a button instead of a title above the terminal. However, I still preserved the simplistic and cozy theme of the site.
+
+![Figma Design Prototype](assets/images/readme-images/Figma.png)
