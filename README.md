@@ -29,9 +29,6 @@ The live site is available for viewing here - <a href="https://***" target="_bla
 * [**Python Packages**](<#python-packages>)
 * [**Testing**](<#testing>)
 * [**Deployment To Heroku**](<#deployment-to-heroku>)
-* [**Credits**](<#credits>)
-    * [**Content**](<#content>)
-    * [**Media**](<#media>)
 
 # Objective
 
@@ -189,3 +186,24 @@ For this site, Google Sheets was used to store the data, update the data and com
 ### Results
 * Ensure results are printed to user.
 * Ensure the correct results are printed to the user.
+
+[Back to Contents](<#contents>)
+
+# Deployment to Heroku
+
+The Thunderbird and Whale project was deployed to [Heroku](https://www.heroku.com).
+I did this through the following steps:
+
+1. Create an account with Heroku or Log In.
+2. Click on the button that states 'Create New App.'
+3. You can then input your application name and select your region- press 'Create App' once that is completed.
+4. Once this has been done, you'll be at the 'Deploy' tab, from here click on settings and then 'Reveal Config Vars' in the 'Config Vars' section. 
+5. Locate the KEY input field and enter "PORT" and in the VALUE input field enter "8000"- click 'Add' on the right.
+6. Scroll to buildpacks section and click on 'Add buildpack'.
+7. Firstly, add 'Python' then add 'node.js', in that specific order.
+8. Search for your respository and click 'Connect'.
+9. Select your preferred deployment type and select 'Deploy Branch'.
+
+You can find the live link the the GitHub repository here- https://github.com/NaifatSelina/third-project 
+
+[Back to Contents](<#contents>)
