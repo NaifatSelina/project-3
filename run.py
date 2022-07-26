@@ -93,7 +93,7 @@ def get_last_5_entries_sold():
     for ind in range(1, 7):
         column = sold.col_values(ind)
         columns.append(column[-5:])
-
+    
     return columns
 
 def main():
@@ -113,6 +113,6 @@ print("It can be hard to keep up with orders... \n")
 print("Which is why we need your help! \n")
 print("We need to know how many orders of books we need everyday! \n")
 print("So lets get started! \n")
-main()
+#main()
 
-sold_columns = get_last_5_entries_sold()
+sold columns = get_last_5_entries_sold()
