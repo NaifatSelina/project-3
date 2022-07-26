@@ -11,7 +11,7 @@ The live site is available for viewing here - <a href="https://***" target="_bla
 * [**Objective**](<#objective>)
 * [**User Experience UX**](<#user-experience-ux>)
     * [Design Prototype](<#design-prototype>)
-    * [Site Structure](<#site-structure>)
+    * [System Structure](<#system-structure>)
     * [Python Logic](<#python-logic>)
     * [Data Model](<#data-model>)
     * [Design Choices](<#design-choices>)
@@ -49,3 +49,13 @@ For my third project I wanted to create something simple, useful and something t
 I used Figma to design a very basic wireframe as I knew this command line application would be simple in its appearance. The system still ended up being slightly different with a dark brown background being used as opposed to a dark green and a button instead of a title above the terminal. However, I still preserved the simplistic and cozy theme of the site.
 
 ![Figma Design Prototype](assets/images/readme-images/Figma.png)
+
+[Back to Contents](<#contents>)
+
+## System Structure
+
+The very simple Thunderbird and Whale Bookstore system simply contains a command line interface where the user is guided on what data they will need to input. Just above the interface is a 'Run System' button which allows for the site to be reloaded.
+
+## Python Logic
+
+
