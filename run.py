@@ -81,6 +81,20 @@ def calculate_difference_data(sold_row):
     
     return difference_data
 
+def get_last_5_entries_sold():
+    """
+    Retrieves columns of data from sold worksheet, collecting
+    the last 5 entries for each bought book and returns
+    as a list.
+    """
+    sold = SHEET.worksheet("sold")
+
+    columns = []
+    for ind in range(1, 7):
+        column = sold.col_values(ind)
+        columns.append(column[-5:])
+
+    return columns
 
 def main():
     """
@@ -90,7 +104,6 @@ def main():
     sold_data = [int(num) for num in data]
     update_worksheet(sold_data, "sold")
     new_difference_data = calculate_difference_data(sold_data)
-    print(new_difference_data)
     update_worksheet(new_difference_data, "difference")
 
 
@@ -101,3 +114,5 @@ print("Which is why we need your help! \n")
 print("We need to know how many orders of books we need everyday! \n")
 print("So lets get started! \n")
 main()
+
+sold_columns = get_last_5_entries_sold()
