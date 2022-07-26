@@ -96,16 +96,34 @@ def get_last_5_entries_sold():
     
     return columns
 
+def calculate_ordered_data(data):
+    """ 
+    Calculate average amount ordered of each book,
+    adding 10% to round as half a book cannot be ordered
+    """
+    print("Calculating data of ordered books...\n")
+    new_ordered_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        average = sum(int_column) / len(int_column)
+        ordered_num = average * 1.1
+        new_ordered_data.append(round(ordered_num))
+
+    return new_ordered_data
+
 def main():
     """
-    Call function created
+    Call functions created
     """
     data = get_sold_data()
     sold_data = [int(num) for num in data]
     update_worksheet(sold_data, "sold")
     new_difference_data = calculate_difference_data(sold_data)
     update_worksheet(new_difference_data, "difference")
-
+    sold_columns = get_last_5_entries_sold() 
+    ordered_data = calculate_ordered_data(sold_columns)
+    print(ordered_data)
 
 print("Welcome to Thunderbird and Whale! \n")
 print("We're a cozy bookstore in Forks however we get alot of customers! \n")
@@ -113,6 +131,7 @@ print("It can be hard to keep up with orders... \n")
 print("Which is why we need your help! \n")
 print("We need to know how many orders of books we need everyday! \n")
 print("So lets get started! \n")
-#main()
+main()
 
-sold columns = get_last_5_entries_sold()
+
+
