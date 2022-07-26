@@ -77,7 +77,7 @@ def calculate_difference_data(sold_row):
     and the amount of books ordered
 
     """
-    print("Gathering difference of sales and orders... \n")
+    print("Gathering the difference of sales and orders... \n")
     ordered = SHEET.worksheet("ordered").get_all_values()
     ordered_row = ordered[-1]
     
